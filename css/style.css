@@ -1,0 +1,219 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before, q:after
+{
+	content: '';
+	content: none;
+}
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?r3nj4s');
+	src:url('../fonts/icomoon.eot?#iefixr3nj4s') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?r3nj4s') format('woff'),
+		url('../fonts/icomoon.ttf?r3nj4s') format('truetype'),
+		url('../fonts/icomoon.svg?r3nj4s#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Icones */
+[class^="icon-"],
+[class*=" icon-"]
+{
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before { content: "\ea91"; }
+
+.icon-github:before { content: "\eab3"; }
+
+.icon-linkedin:before { content: "\eac9"; }
+
+.icon-codepen:before { content: "\eae4"; }
+
+.icon-mail:before { content: "\e600"; }
+
+html, body { height: 100%; }
+
+body
+{
+	color: #555;
+	font-family: 'Jura', sans-serif;
+	line-height: 1.2;
+	text-align: center;
+	overflow: hidden;
+	width: 100%;
+}
+
+ul, ol
+{
+	list-style-type: none;
+}
+
+/* Animations */
+@keyframes svgDraw
+{
+	to { stroke-dashoffset: 0; }
+}
+
+@-webkit-keyframes svgDraw
+{
+	to { stroke-dashoffset: 0; }
+}
+
+@keyframes svgFadeIn
+{
+	to { fill-opacity: 1; }
+}
+
+@-webkit-keyframes svgFadeIn
+{
+	to { fill-opacity: 1; }
+}
+
+@keyframes fadeIn
+{
+	to { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn
+{
+	to { opacity: 1; }
+}
+
+.container
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	width: 65%;
+	max-width: 900px;
+}
+
+#logo { margin: 0 0 20px; }
+
+#logo svg
+{
+	height: 60px;
+	padding: 10px;
+}
+
+.cssanimations #logo path
+{
+	fill-opacity: 0;
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation: svgDraw 3.5s linear forwards,
+			   svgFadeIn .5s 2.1s forwards;
+	-webkit-animation: svgDraw 3.5s linear forwards,
+					   svgFadeIn .5s 2.1s forwards;
+}
+
+.cssanimations .title,
+.cssanimations .description,
+.cssanimations .social-networks
+{
+	opacity: 0;
+	animation: fadeIn .5s 2.1s forwards;
+	-webkit-animation: fadeIn .5s 2.1s forwards;
+}
+
+.title
+{
+	font-size: 40px;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0 0 10px;
+}
+
+.description
+{
+	font-size: 20px;
+	margin: 0 0 20px;
+}
+
+.social-networks { font-size: 25px; }
+
+.social-networks li
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.social-networks li + li { 	margin: 0 0 0 10px; }
+
+.social-networks a
+{
+	color: inherit;
+	display: block;
+	text-decoration: none;
+	transition: all .4s;
+}
+
+.social-networks a:hover,
+.social-networks a:focus { color: #000; }
+
+.social-networks a span
+{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
