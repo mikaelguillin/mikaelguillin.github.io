@@ -91,7 +91,17 @@ body
 	line-height: 1.2;
 	text-align: center;
 	overflow: hidden;
+  	position: relative;
 	width: 100%;
+}
+
+body:before
+{
+	content: " ";
+	display: inline-block;
+	height: 100%;
+	width: 1%;
+	vertical-align: middle;
 }
 
 ul, ol
@@ -132,15 +142,11 @@ ul, ol
 
 .container
 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	width: 65%;
+	display: inline-block;
 	max-width: 900px;
+	padding: 20px 10px;
+	vertical-align: middle;
+	width: 65%;
 }
 
 #logo { margin: 0 0 10px; }
