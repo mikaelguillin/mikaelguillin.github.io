@@ -143,23 +143,17 @@ ul, ol
 	max-width: 900px;
 }
 
-#logo { margin: 0 0 20px; }
-
-#logo svg
-{
-	height: 60px;
-	padding: 10px;
-}
+#logo { margin: 0 0 10px; }
 
 .cssanimations #logo path
 {
 	fill-opacity: 0;
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
-	animation: svgDraw 3.5s linear forwards,
-			   svgFadeIn .5s 2.1s forwards;
-	-webkit-animation: svgDraw 3.5s linear forwards,
-					   svgFadeIn .5s 2.1s forwards;
+	animation: svgDraw 6.4s .3s linear forwards,
+			   svgFadeIn .5s 2.4s forwards;
+	-webkit-animation: svgDraw 6.4s .3s linear forwards,
+					   svgFadeIn .5s 2.4s forwards;
 }
 
 .cssanimations .title,
@@ -167,8 +161,8 @@ ul, ol
 .cssanimations .social-networks
 {
 	opacity: 0;
-	animation: fadeIn .5s 2.1s forwards;
-	-webkit-animation: fadeIn .5s 2.1s forwards;
+	animation: fadeIn .5s 2.4s forwards;
+	-webkit-animation: fadeIn .5s 2.4s forwards;
 }
 
 .title
