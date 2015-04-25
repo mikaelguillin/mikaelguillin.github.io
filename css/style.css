@@ -217,3 +217,10 @@ ul, ol
 	clip: rect(0,0,0,0);
 	border: 0;
 }
+
+/* Mobile */
+@media screen and (max-width: 375px) {
+
+	.container { width: 90%; }
+
+}
